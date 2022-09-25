@@ -1,0 +1,11 @@
+/Users/codecadet/Desktop/transforMusic/src/main/java/org/academiadecodigo/hackathon/User.java
+/Users/codecadet/Desktop/transforMusic/src/main/java/org/academiadecodigo/hackathon/controller/ControllerRest.java
+/Users/codecadet/Desktop/transforMusic/src/main/java/org/academiadecodigo/hackathon/ServiceUser.java
+/Users/codecadet/Desktop/transforMusic/src/main/java/org/academiadecodigo/hackathon/converters/UserDtoToUser.java
+/Users/codecadet/Desktop/transforMusic/src/main/java/org/academiadecodigo/hackathon/errors/ErrorMessage.java
+/Users/codecadet/Desktop/transforMusic/src/main/java/org/academiadecodigo/hackathon/exceptions/JavaBankException.java
+/Users/codecadet/Desktop/transforMusic/src/main/java/org/academiadecodigo/hackathon/exceptions/UserNotFoundException.java
+/Users/codecadet/Desktop/transforMusic/src/main/java/org/academiadecodigo/hackathon/UserDto.java
+/Users/codecadet/Desktop/transforMusic/src/main/java/org/academiadecodigo/hackathon/App.java
+/Users/codecadet/Desktop/transforMusic/src/main/java/org/academiadecodigo/hackathon/UserDao.java
+/Users/codecadet/Desktop/transforMusic/src/main/java/org/academiadecodigo/hackathon/converters/UserToDto.java

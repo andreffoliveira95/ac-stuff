@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <!--<link rel="stylesheet" href="./reset.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./musics.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js">
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="msg">Welcome </div>
+            <ul class="ulNav">
+
+                <!--<li><a href="#"><i class="fa-solid fa-square-phone"></i>&nbsp;&nbsp;Contact</a></li>-->
+                <li><a href="./about.html"><i class="fa-solid fa-beer-mug-empty"></i>&nbsp;&nbsp;About Us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="modalForm" id="modalForm">
+        <h1 class="h1Title"><span class="spanAnim">AngelPimba</span></h1>
+        <form action="# ">
+            <label for="name">Name</label><input type="text" id="name" name="name" placeholder="<insert name here>">
+            <label for="password">Password</label><input type="password" required id="password" name="password">
+            <input class="inputBtn" type="submit" value="Enter">
+        </form>
+        <button class="btnNewUser">New User</button>
+    </div>
+
+
+    <main id="mainContent">
+        <div class="divMusics">
+            <h2 id="h2Choice" class="h2Choice collapsible"><i class="fa-solid fa-music"></i> Choose Your Music</h2>
+            <ul id="ulMusics" class="ulMusics content">
+                <li class="musicItem"><a id="" class="aMusic" href="#"><span class="artist">Quim Barreiros | </span><span class="music">Chupa Teresa</span></a></li>
+                <hr>
+                <li class="musicItem"><a id="" class="aMusic" href="#"><span class="artist">Quim Barreiros | </span><span class="music">Dá-me o Pito</span></a></li>
+                <hr>
+                <!--<li class="musicItem"><a href="#"><span class="artist">Anjos | </span><span class="music">Ficarei </span></a></li>-->
+                <li class="musicItem"><a id="" class="aMusic" href="#"><span class="artist">Marco Paulo | </span><span class="music">Paula</span></a></li>
+                <hr>
+                <li class="musicItem"><a id="" class="aMusic" href="#"><span class="artist">Marco Paulo | </span><span class="music">Joana</span></a></li>
+                <hr>
+                <li class="musicItem"><a id="" class="aMusic" href="#"><span class="artist">Marco Paulo | </span><span class="music">Anita</span></a></li>
+                <hr>
+                <li class="musicItem"><a id="" class="aMusic" href="#"><span class="artist">Marco Paulo | </span><span class="music">Chiquitita</span></a></li>
+                <hr>
+                <li class="musicItem"><a id="" class="aMusic" href="#"><span class="artist">Marco Paulo | </span><span class="music">Isabel</span></a></li>
+                <hr>
+                <li class="musicItem"><a id="" class="aMusic" href="#"><span class="artist">Marco Paulo | </span><span class="music">Dalila</span></a></li>
+                <hr>
+                <li class="musicItem"><a id="" class="aMusic" href="#"><span class="artist">Quim Barreiros | </span><span class="music">Fui Acudir</span></a></li>
+                <hr>
+                <li class="musicItem"><a id="" class="aMusic" href="#"><span class="artist">Quim Barreiros | </span><span class="music">Bacalhau</span></a></li>
+                <hr>
+                <li class="musicItem"><a id="" class="aMusic" href="#"><span class="artist">Quim Barreiros | </span><span class="music">Cabritinha</span></a></li>
+                <hr>
+                <li class="musicItem"><a id="" class="aMusic" href="#"><span class="artist">Los Hermanos | </span><span class="music">Anna Júlia</span></a></li>
+            </ul>
+        </div>
+        <div class="innerContainer">
+            <div class="divString">
+                <label class="labelName" for="string">Insert Name:</label>
+                <input id="string" class="string" type="text" class="string" maxlength="15">
+                <button class="btnChange">Change Lyrics</button>
+            </div>
+
+
+            <!--<input type="text" name="text"> -->
+
+
+            <button class="btnPlay">
+                <audio src="" class="speech" hidden></audio>
+                <select id="languages">
+                    <option value="ar-sa">Arabic</option>
+                    <option value="zh-cn">Chinese</option>
+                    <option value="nl-nl">Dutch</option>
+                    <option value="en-ie">English</option>
+                    <option value="fr-fr">French</option>
+                    <option value="de-de">German</option>
+                    <option value="hi-in">Hindi</option>
+                    <option value="it-it">Italian</option>
+                    <option value="pt-pt">Portuguese</option>
+                    <option value="ru-ru">Russian</option>
+                    <option value="es-es">Spanish</option>
+                </select>
+                <a href="#" class="say"><i class="fa-solid fa-play play"></i></a>
+                <!--<a href="#" class="stop"><i class="fa-solid fa-stop play"></i></a>-->
+                <!--<i class="fa-regular fa-circle-pause"></i> -->
+            </button>
+            <div>
+
+            </div>
+        </div>
+
+        <div class="musicLyrics">
+            <p class="pLyrics"></p>
+        </div>
+    </main>
+    <footer><img src="./img/logo_academiaDeCodigo.jpeg" alt="academia de codigo"></footer>
+    <!--main content-->
+
+
+    <script src="./script.js"></script>
+    <script>
+    </script>
+</body>
+
+</html>

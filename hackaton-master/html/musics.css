@@ -1,0 +1,164 @@
+#mainContent {
+    /*background-color: rgba(0, 0, 0, 0.6);*/
+    opacity: 0;
+    height: 1000px;
+    margin-left: -400px;
+    padding: 2%;
+    transition: 0.7s ease-in-out all;
+    border: 1px inset white;
+    background-image: url("./img/pexels-jessica-lewis-creative-1010519.jpg");
+    /*Photo by Jessica Lewis Creative: https://www.pexels.com/photo/brown-and-black-cut-away-acoustic-guitar-1010519/*/
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+.labelName {
+    text-shadow: 5px 5px 10px white;
+}
+
+#mainContent div {
+    margin: 2% 0;
+}
+
+.h2Choice {
+    color: white;
+    background-color: crimson;
+    padding: 1%;
+    text-align: center;
+    width: 30%;
+    transition: 0.7s ease-in-out all;
+    font-size: 2.3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.h2Choice:hover {
+    background-color: white;
+    color: purple;
+    outline: 2px solid purple;
+    cursor: pointer;
+}
+
+.content {
+    padding: 0 18px;
+    height: 400px;
+    width: 32%;
+    max-height: 0;
+    overflow: scroll;
+    transition: all 0.2s ease-out;
+    background-color: white;
+    color: blueviolet;
+    z-index: 9999;
+    text-align: center;
+}
+
+.content a {
+    text-decoration: none;
+    font-size: 1.4em;
+    padding: 18px;
+    transition: 0.5s linear all;
+}
+
+.content a:hover {
+    background-color: crimson;
+    color: white;
+    border-radius: 10px;
+}
+
+.innerContainer {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    opacity: 1;
+}
+
+.divString {
+    display: flex;
+}
+
+.divString input {
+    height: 60px;
+    padding: 1%;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.musicItem {
+    padding: 2%;
+    width: 60%;
+    background-color: white;
+    list-style: none;
+}
+
+.musicLyrics {
+    border: 1px solid red;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    background-color: white;
+    color: blueviolet;
+    width: 40%;
+    height: 475px;
+    overflow: scroll;
+    font-size: 1.2em;
+    padding: 1% 3%;
+    z-index: 1;
+    border-radius: 15px;
+}
+
+#languages {
+    height: 60px;
+    width: 200px;
+    font-size: 1.5em;
+    text-align: center;
+    position: absolute;
+    left: -300px;
+    bottom: 0;
+    border-radius: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.btnPlay {
+    position: absolute;
+    bottom: 15%;
+    right: 5%;
+    opacity: 0;
+    transition: 0.9s ease-in-out all;
+    border-radius: 999em;
+    width: 150px;
+}
+
+.play {
+    font-size: 5em;
+}
+
+.play:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.pLyrics {
+    color: darkslategray;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2em;
+}
+
+.btnChange {
+    padding: 2.3%;
+    background-color: teal;
+    color: white;
+    font-size: 1.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 0.7s ease-in-out all;
+    cursor: pointer;
+}
+
+.btnChange:hover {
+    background-color: white;
+    color: seagreen;
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+}

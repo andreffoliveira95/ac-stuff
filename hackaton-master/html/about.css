@@ -1,0 +1,64 @@
+body {
+    background: linear-gradient(297deg, #311D3F, #e23e57db, #88304E, #522546);
+    background-repeat: no-repeat;
+    background-size: contain;
+    scroll-behavior: smooth;
+    margin: 0 auto;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 3em;
+}
+
+.homeLink {
+    color: white;
+    position: relative;
+}
+
+.homeLink:hover {
+    color: crimson;
+}
+
+.homeLink:hover::after {
+    content: "  Going back home?";
+    text-decoration: none;
+    position: absolute;
+    margin-left: 5%;
+    color: white;
+    width: 400px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 4%;
+}
+
+.imgProfile {
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.innerContainer {
+    border: 2px inset black;
+    padding: 2%;
+    background-color: white;
+    transition: .8s ease-in-out all;
+    width: 25%;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.innerContainer:hover {
+    box-shadow: 1px 1px 50px black;
+    transform: scale(1.2);
+    background-color: sandybrown;
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+}
