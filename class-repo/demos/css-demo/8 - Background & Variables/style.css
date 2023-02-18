@@ -1,0 +1,285 @@
+:root {
+    --black: black;
+    --white: white;
+}
+
+body {
+    background: black;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Space Mono', monospace;
+    font-size: 18px;
+    line-height: 1.6em;
+}
+
+h1, .h1 {
+    font-size: 3.2em;
+    line-height: 1em;
+    margin: 0px;
+}
+
+h2, .h2 {
+    font-size: 2.4em;
+    line-height: 1.2em;
+    margin: 0px;
+}
+
+h3, .h3 {
+    font-size: 2em;
+    line-height: 1.2em;
+    margin: 0px;
+}
+
+h4, .h4 {
+    font-size: 1.4em;
+    line-height: 1.2em;
+    margin: 0px;
+}
+
+h5, .h5 {
+    font-size: 1em;
+    line-height: 1.2em;
+    margin: 0px;
+}
+
+h6, .h6 {
+    font-size: 0.8em;
+    line-height: 1.2em;
+    letter-spacing: 0.08em;
+    margin: 0px;
+}
+
+p, .p {
+    font-size: 1em;
+    line-height: 1.4em;
+    margin: 0px;
+}
+
+section {
+    padding: 80px 0px;
+}
+
+section.bck-invert {
+    background: white;
+    color: black;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0px 80px;
+    margin: 0px auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 20px 34px;
+    font-size: 0.8em;
+    text-decoration: none;
+    background: red;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+    transform: translateY(-14px);
+    transition: all 0.08s ease-in-out;
+}
+
+.btn.btn_small {
+    padding: 10px 24px;
+    border-radius: 30px;
+}
+
+.btn.btn_white {
+    background: white;
+    color: black;
+}
+
+.label {
+    display: inline-block;
+    background-image: url("assets/label-icon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center right;
+    padding-right: 90px;
+    margin-bottom: 20px;
+}
+
+/* -------- Hero -------- */
+
+.hero {
+    background-image: url("assets/background-hero.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0px;
+}
+
+.hero .structure {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 0px;
+    min-height: calc(100vh - 40px);
+}
+
+.hero .menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero .menu .links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 60px;
+}
+
+.hero .menu .links .link {
+    text-decoration: none;
+    color: white;
+}
+
+.hero .menu .links .link:hover {
+    color: red;
+}
+
+.hero .content {
+    width: 100%;
+    max-width: 800px;
+}
+
+.hero .content h1 {
+    margin-bottom: 60px;
+}
+
+.hero .content p {
+    margin-bottom: 10px;
+}
+
+.hero .content .btn {
+    margin-top: 60px;
+}
+
+.hero .scroller {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.hero .scroller:hover {
+    animation: bounce 0.4s ease-in-out;
+}
+
+/* -------- About -------- */
+
+section.about {
+    --dot: black;
+    --bck: white;
+    --size: 2px;
+    --area: 50px;
+    --patternSize: calc( var(--area) + var(--size));
+    
+    background-image: 
+        linear-gradient( var(--bck) var(--area), transparent var(--area)),
+        linear-gradient(90deg, var(--bck) var(--area), var(--dot) var(--area))
+    ;
+    background-size: var(--patternSize) var(--patternSize);
+}
+
+.about h2 {
+    margin-bottom: 60px;
+}
+
+.about .structure {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 80px;
+}
+
+.about .structure .stats {
+    display: block;
+    width: 300px;
+    height: auto;
+}
+
+.about .content .btn {
+    margin-top: 60px;
+}
+
+
+/* -------- Media Queries -------- */
+
+.hide-tablet {
+    display: block;
+}
+
+@media only screen and (max-width: 1024px) {
+    .hide-tablet {
+        display: none;
+    }
+
+    body {
+        font-size: 16px;
+        line-height: 1.4em;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 0px 20px;
+    }
+
+    h1, .h1 {
+        font-size: 2.6em;
+    }
+    
+    h2, .h2 {
+        font-size: 2em;
+    }
+
+    .hero .structure {
+        min-height: auto;
+        gap: 80px;
+    }
+
+    section.about {
+        --dot: black;
+        --bck: white;
+        --size: 10px;
+        --area: 20px;
+    }
+
+    .about .structure {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .about .structure .stats {
+        width: 100%;
+    }
+}
+
+
+/* -------- Animation -------- */
+
+@keyframes bounce {
+    0%      {transform: translateY(0px);}
+    25%     {transform: translateY(-10px);}
+    50%     {transform: translateY(0px);}
+    75%     {transform: translateY(-20px);}
+    100%    {transform: translateY(0px);}
+  }

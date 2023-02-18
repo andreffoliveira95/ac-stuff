@@ -1,0 +1,27 @@
+body {
+    background: black;
+    color: white;
+}
+
+section.bck-invert {
+    background: white;
+    color: black;
+}
+
+.container {
+    max-width: 960px;
+    padding: 0px 40px;
+    margin: 0px auto;
+}
+
+section {
+    padding: 80px 0px;
+}
+
+.hero {}
+
+.about {}
+
+.hero .structure {}
+
+.about .structure {}

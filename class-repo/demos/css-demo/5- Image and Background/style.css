@@ -1,0 +1,143 @@
+body {
+    background: black;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Space Mono', monospace;
+    font-size: 18px;
+    line-height: 1.6em;
+}
+
+h1, .h1 {
+    font-size: 3em;
+    line-height: 1.2em;
+}
+
+h2, .h2 {
+    font-size: 2.4em;
+    line-height: 1.2em;
+}
+
+h3, .h3 {
+    font-size: 2em;
+    line-height: 1.2em;
+}
+
+h4, .h4 {
+    font-size: 1.4em;
+    line-height: 1.2em;
+}
+
+h5, .h5 {
+    font-size: 1em;
+    line-height: 1.2em;
+}
+
+h6, .h6 {
+    font-size: 0.8em;
+    line-height: 1.2em;
+    letter-spacing: 0.08em;
+}
+
+section {
+    padding: 80px 0px;
+}
+
+section.bck-invert {
+    background: white;
+    color: black;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0px 40px;
+    margin: 0px auto;
+}
+
+.btn {
+    padding: 20px 34px;
+    font-size: 0.8em;
+    text-decoration: none;
+    background: red;
+    color: white;
+}
+
+.btn.btn_small {
+    padding: 10px 24px;
+    border-radius: 30px;
+}
+
+.btn.btn_white {
+    background: white;
+    color: black;
+}
+
+.label {
+    display: inline-block;
+    background-image: url("assets/label-icon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center right;
+    padding-right: 90px;
+}
+
+/* -------- Hero -------- */
+
+.hero {
+    background-image: url("assets/background-hero.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero .structure {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.hero .menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero .menu .links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 60px;
+}
+
+.hero .content {
+    width: 100%;
+    max-width: 800px;
+}
+
+.hero .scroller {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* -------- About -------- */
+
+.about {
+    background: white;
+}
+
+.about .structure {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
